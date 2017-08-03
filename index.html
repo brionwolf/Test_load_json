@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Json</title>
+        <style type="text/css" media="screen">
+          body {
+            background:#eeeeee;
+            height:100vh;
+            width:100%;
+          }
+
+          canvas.keyboard {
+            background:#ffffff;
+            height:400px;
+            margin:10px auto;
+            width:600px;
+          }
+        </style>
+    </head>
+    <body>
+        
+      <canvas class="keyboard" width="600px" height="400px">Error</canvas>
+
+      <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(function(){
+          $.getJSON('names.json',function(data){
+            console.log('success');
+          });
+        }).error(function(){
+          console.log('error');
+        });
+
+        function draw() {
+          var canvas = $('.keyboard');
+          if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+          }
+        }
+
+      </script>
+    </body>
+</html>

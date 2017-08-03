@@ -1,0 +1,23 @@
+{
+     "touches": 
+     [
+         {
+             "endX": 490,
+             "endY": 500,
+             "startX": 490,
+             "startY": 500,
+         },
+         {
+             "endX": 300,
+             "endY": 400,
+             "startX": 200,
+             "startY": 300,
+         },
+         {
+             "endX": 20,
+             "endY": 100,
+             "startX": 21,
+             "startY": 120,
+         }
+     ]
+ }
